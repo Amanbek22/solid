@@ -1,5 +1,9 @@
 @import url("fonts/gilroy/stylesheet.css");
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--bg-color: #131b1f;
 	--primary-dark: #ffffff;
@@ -26,9 +30,7 @@
 		);
 	--lottie-stroke: #414b50;
 }
-html {
-	scroll-behavior: smooth;
-}
+
 * {
 	padding: 0;
 	box-sizing: border-box;
@@ -344,7 +346,6 @@ nav ul.slide {
 .sidebar {
 	display: flex;
 	position: absolute;
-	top: 15px;
 	left: auto;
 	z-index: 4;
 	align-items: center;
@@ -409,7 +410,7 @@ nav ul.slide {
 
 .btn-red-transparent {
 	padding: 10px 50px;
-	border: 3px solid #ae0000;
+	border: 3px solid #42BDEB;
 	transition: all 0.3s;
 }
 
@@ -428,7 +429,7 @@ nav ul.slide {
 }
 
 .btn-red-transparent:hover {
-	background-color: #ae0000;
+	background-color: #42BDEB;
 }
 
 .animate-y:active {
@@ -440,7 +441,7 @@ nav ul.slide {
 /* Header */
 .header {
 	height: 100vh;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 100%;
 	margin: 0px auto;
 	position: relative;
@@ -451,6 +452,7 @@ nav ul.slide {
 
 .header .container {
 	z-index: 10;
+  top: 40px;
 }
 
 .header .c-animation-wrapper {
@@ -604,19 +606,20 @@ nav ul.slide {
 
 /* Courses */
 .courses {
+  margin-top: 60px;
 	width: 100%;
 	height: calc(100vh - 65px);
 }
 
 .courses-inner {
-	padding-top: 40px;
+	/*padding-top: 40px;*/
 	padding-left: 100px;
 	display: flex;
 }
 
 .courses-info {
 	padding: 0 25px;
-	max-width: 550px;
+	max-width: 650px;
 }
 
 .courses-title {
@@ -625,6 +628,7 @@ nav ul.slide {
 }
 
 .courses-content {
+  font-size: 18px;
 	line-height: 170%;
 	font-weight: normal;
 	color: var(--secondary-text);
@@ -640,6 +644,10 @@ nav ul.slide {
 .courses-btn {
 	display: inline-block;
 	margin-top: 50px;
+}
+
+.courses-inner-main {
+  margin-left: 40px;
 }
 
 @media (max-width: 992px) {
