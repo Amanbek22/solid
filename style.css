@@ -26,7 +26,9 @@
 		);
 	--lottie-stroke: #414b50;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 * {
 	padding: 0;
 	box-sizing: border-box;

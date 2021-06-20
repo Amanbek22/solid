@@ -96,9 +96,11 @@ window.addEventListener("resize", hideBurgerOnDesktop);
 
 // scroll parallax
 window.addEventListener("scroll", () => {
-	document.getElementById("parallaxSky").style = `top: ${-100 + (window.pageYOffset/2)}px`
-	document.getElementById("parallaxMountains").style = `top: ${350 + (window.pageYOffset/2)}px`
-	document.getElementById("parallaxBottom").style = `bottom: ${-400 + (window.pageYOffset/1)}px`
+	if(document.getElementById("parallaxSky")){
+		document.getElementById("parallaxSky").style = `top: ${-100 + (window.pageYOffset/2)}px`
+		document.getElementById("parallaxMountains").style = `top: ${350 + (window.pageYOffset/2)}px`
+		document.getElementById("parallaxBottom").style = `bottom: ${-400 + (window.pageYOffset/1)}px`
+	}
 })
 
 const coursesArr = [
@@ -123,21 +125,22 @@ const coursesArr = [
 ]
 
 const chooseCourse = (index) => {
-	document.getElementById("course").innerHTML = `
+	let course = document.getElementById("course");
+	course ? course.innerHTML = `
 	<b>${coursesArr[index].name}</b>
 	<br />
 	${coursesArr[index].description}
 	<a href="#" class="u-text-blue">View More</a>
-	`
+	` : null
 	const sidebarLinks = document.querySelectorAll(".sidebar a");
 	sidebarLinks.forEach((item) => item.classList.remove("active"))
-	sidebarLinks[index].className += "active"
+	sidebarLinks[index] ? sidebarLinks[index].className += "active" : null
 }
 
 const setSidebar = () => {
 	coursesArr.forEach((item, index) => {
 		document.getElementById("bar")
-		.insertAdjacentHTML('beforeend',
+		?.insertAdjacentHTML('beforeend',
 		 `<a id="${item.name}" onclick="chooseCourse(${index})"><i class="fab fa-node-js"></i></a>`)
 	})
 }
@@ -145,7 +148,7 @@ const setSidebar = () => {
 const setCoursesMobile = () => {
 	coursesArr.forEach((item, index) => {
 		document.getElementById("coursesContainer")
-		.insertAdjacentHTML("beforeend", 
+		?.insertAdjacentHTML("beforeend", 
 		`
 		<div class="courses-inner courses-inner-mobile">
 		<div class="courses-info">
