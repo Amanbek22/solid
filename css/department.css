@@ -192,3 +192,89 @@
 .p20 {
     padding: 20px;
 }
+
+
+@media (max-width: 950px) {
+    .d__main--connect {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+    .a__courses{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px) {
+    .why__block .reason p{
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .submit-btn{
+        margin: 0 !important;
+    }
+    .contact__form {
+        max-width: 650px;
+        width: 100%;
+    }
+    .study__steps {
+        margin: 0 auto;
+        flex-basis: 85%;
+    }
+    .study__steps--step {
+        text-align: center;
+        margin: 0 0 75px 0;
+        width: 100%;
+    }
+    .study__steps--step > h3 {
+        font-size: 20px;
+    }
+    .svg {
+        display: none;
+    }
+    .reason {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reason > img {
+        width: 100px;
+        height: 100px !important;
+        margin-bottom: 20px;
+    }
+    .all--title {
+        font-size: 30px;
+    }
+    .a__course--des{
+        max-width: 400px;
+        width: 100%;
+    }
+    .d__main__description {
+        padding: 0;
+    }
+    .d__main--connect {
+        display: flex;
+        justify-content: center !important;
+    }
+    .d__main {
+        flex-direction: column;
+    }
+    .d__main__description > h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    .d__main__description > h3{
+        text-align: center;
+        margin: 0;
+    }
+    .d__main__icon {
+        display: none;
+    }
+    .d__main__info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .d__main__course {
+        margin: 20px auto;
+        width: 80%;
+    }
+}
