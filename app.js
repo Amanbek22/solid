@@ -115,6 +115,7 @@ const coursesArr = [
 		id: 1,
 		icon: "fab fa-react",
 		name: "Front-End React.js разработка",
+    department: "react.html",
 		description: `Экстремальный курс от Solid Academy \"FRONT-END DEVELOPING\" с нуля🔥💻.
     Освойте профессию разработчика с нуля до специалиста за 6 месяцев <br>Почему Front-End? <br>
     Если вы любите технологии, получаете удовольствие от создания креативных пользовательских
@@ -125,7 +126,8 @@ const coursesArr = [
 	{
 		id: 2,
 		icon: "fab fa-node-js",
-		name: "Back-End Node.js разработка",
+		name: "JavaScript Full Stack разработка",
+    department: "full.html",
 		description: `Экстремальный курс от Solid Academy \"JAVASCRIPT DEVELOPING\" с нуля🔥💻. 
     Получи профессию своей мечты JavaScript Full Stack разработчика <br>Почему JavaScript?<br>
     В процессе обучения вы получите фундаментальные знания Back-End и Front-End разработки,
@@ -137,6 +139,7 @@ const coursesArr = [
 		id: 3,
 		icon: "fab fa-android",
 		name: "Mobile-Dev Java разработка",
+    department: "full.html",
 		description: `Выше отмечено, что Java относится к языкам программирования общего назначения. 
     Новичкам интересно знать, что конкретно пишут Java-программисты, чтобы определиться с выбором языка.
     По данным компании Oracle, программы на Java запускаются на 3 млрд девайсов. Это маркетинговое 
@@ -147,6 +150,7 @@ const coursesArr = [
 		id: 4,
 		icon: "fab fa-python",
 		name: "Back-End Python s разработка",
+    department: "full.html",
 		description: `Язык программирования Python 3 — это мощный инструмент для создания программ самого 
     разнообразного назначения, доступный даже для новичков. С его помощью можно решать задачи различных типов.
     Язык Python обладает некоторыми примечательными особенностями, которые обуславливают его широкое распространение.
@@ -157,6 +161,7 @@ const coursesArr = [
 		id: 5,
 		icon: "far fa-gem",
 		name: "UI/UX Design",
+    department: "full.html",
 		description: `На курсе «UX-дизайн» вы научитесь проектировать удобные и функциональные интерфейсы сайтов, 
     приложений и программ. Вы не только узнаете, как разрабатывать визуально привлекательные проекты,
     но и сможете создавать новый положительный опыт пользователей и менять мышление бизнеса об интерфейсах
@@ -169,7 +174,7 @@ const chooseCourse = (index) => {
 	<b>${coursesArr[index].name}</b>
 	<br />
 	${coursesArr[index].description}
-	<a href="department.html" class="u-text-blue">View More</a>
+	<a href="${coursesArr[index].department}" class="u-text-blue">View More</a>
 	`
 	const sidebarLinks = document.querySelectorAll(".sidebar a");
 	sidebarLinks.forEach((item) => item.classList.remove("active"))
@@ -212,3 +217,31 @@ window.addEventListener("load", () => {
 	chooseCourse(0)
 	setCoursesMobile()
 })
+
+const modal = document.getElementById("modalWrapper")
+const openModal = () => {
+	modal.style = "left: 0";
+}
+
+let btnWriteUs = document.getElementById("write_us");
+
+btnWriteUs.addEventListener("click", () => {
+	openModal();
+})
+
+document.getElementById("modalWrapper").addEventListener("click", function(evt) {
+	var flyoutElement = document.getElementById('modal'),
+		targetElement = evt.target;  // clicked element
+
+	do {
+		if (targetElement == flyoutElement) {
+			// This is a click inside. Do nothing, just return.
+			return;
+		}
+		// Go up the DOM
+		targetElement = targetElement.parentNode;
+	} while (targetElement);
+
+	// This is a click outside.
+	document.getElementById("modalWrapper").style = "left: -120%;"
+});

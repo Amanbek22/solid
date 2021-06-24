@@ -20,30 +20,6 @@
 				<div class="nav-bar">
 					<ul class="nav-list">
 						<li class="nav-item">
-							<div class="nav-dropdown">
-								<a href="#" class="nav-dropdown-preview">
-									Направления
-									<svg
-										class="arrow-down"
-										width="9"
-										height="5"
-										viewBox="0 0 9 5"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M4.96455 4.76804L8.8385 0.932077C9.0563 0.716441 9.05342 0.369595 8.83219 0.157378C8.6109 -0.0548478 8.25497 -0.0520811 8.03724 0.163555L4.5 3.6661L0.96276 0.163554C0.745032 -0.0520817 0.389105 -0.0548485 0.167809 0.157377C-0.053419 0.369594 -0.056301 0.71644 0.161496 0.932076L4.03545 4.76804C4.05452 4.7943 4.07621 4.81927 4.10057 4.84263C4.21139 4.94894 4.35604 5.0013 4.50014 4.99998C4.64424 5.0013 4.78861 4.94894 4.89943 4.84263C4.92379 4.81927 4.94547 4.7943 4.96455 4.76804Z"
-											fill="white"
-										></path>
-									</svg>
-								</a>
-								<div class="nav-dropdown-values">
-									<a href="department.html" class="nav-dropdown-value">Front-End</a>
-									<a href="#" class="nav-dropdown-value">Back-End</a>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item">
 							<a href="tel:+996707629617" class="nav-link btn btn-brighred animate-y"
 								>Позвонить</a>
 						</li>
@@ -236,8 +212,8 @@
 							<div id="course" class="courses-content">
 	
 							</div>
-							<a href="#" class="courses-btn btn-red-transparent"
-								>Напишите нам</a
+							<div id="write_us" class="courses-btn btn-red-transparent"
+								>Напишите нам</div
 							>
 						</div>
 						<div class="courses-logo">
@@ -247,7 +223,22 @@
 				</div>
 			</div>
 		</div>
-
+		<div id="modalWrapper" class="modal__wrapper">
+			<div id="modal" class="modal">
+				<h1>Написать нам</h1>
+				<br>
+				<br>
+				<form action="" class="modal__contact__form">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Номер">
+					<br>
+					<br>
+					<button class="btn-red-transparent modal--btn">
+						Напишите нам
+					</button>
+				</form>
+			</div>
+		</div>
 		<script src="app.js"></script>
 	</body>
 </html>
