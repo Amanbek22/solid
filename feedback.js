@@ -17,6 +17,6 @@ sendMessage.addEventListener('click', async () => {
     },
     body: JSON.stringify(message)
   });
-
+  document.getElementById("modalWrapper").style = "left: -120%;"
   console.log(response);
 })
