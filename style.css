@@ -119,6 +119,10 @@ li {
 
 /* Navbar */
 
+.nav--item--link {
+	display: none;	
+}
+
 .dropdown-preview {
 	display: flex;
 	align-items: center;
@@ -302,6 +306,12 @@ li {
 	.menu-bars {
 		display: flex;
 	}
+	.nav--item--link {
+		display: block;
+	}
+	.btn--call {
+		display: none !important;
+	}
 	nav ul {
 		position: absolute;
 		right: 0;
@@ -317,9 +327,6 @@ li {
 
 	.nav-item {
 		margin-left: 30px;
-	}
-	.nav-item:last-child {
-		margin-top: 30px;
 	}
 	.nav-dropdown-values {
 		display: flex;

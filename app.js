@@ -212,7 +212,18 @@ const setCoursesMobile = () => {
 	})
 }
 
+const setNavLinks = () => {
+	coursesArr.forEach((item) => {
+		document.querySelector(".nav-list").insertAdjacentHTML("beforeend", `
+			<li class="nav-item nav--item--link">
+				${item.name}
+			</li>
+		`)
+	})
+}
+
 window.addEventListener("load", () => {
+	setNavLinks()
 	setSidebar()
 	chooseCourse(0)
 	setCoursesMobile()
