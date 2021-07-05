@@ -200,7 +200,7 @@ const setCoursesMobile = () => {
 				<b>${item.name}</b>
 				<br>
 				${item.description}
-				<a href="department.html" class="u-text-blue">View More</a>
+				<a href="${coursesArr[index].department}" class="u-text-blue">View More</a>
 			</div>
 		</div>
 		<div class="courses-logo">
