@@ -490,6 +490,7 @@ nav ul.slide {
 	font-size: 20px;
 	font-weight: 300;
 	text-align: center;
+  line-height: 140%;
 }
 
 .header-btn {
@@ -659,7 +660,7 @@ nav ul.slide {
 
 .courses-title {
 	margin-bottom: 30px;
-	font-size: 36px;
+	font-size: 40px;
 }
 
 .courses-content {
@@ -678,14 +679,14 @@ nav ul.slide {
 } 
 .cousers--card {
 	min-width: 350px;
-    max-width: 500px;
-    min-height: 480px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    text-align: left;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 40px 0px;
+  max-width: 500px;
+  min-height: 480px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 40px 0px;
 	overflow: hidden;
 	opacity: 0.85;
 	transition: all 0.3s linear;
