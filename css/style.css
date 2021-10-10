@@ -1,4 +1,4 @@
-@import url("fonts/gilroy/stylesheet.css");
+@import url("../fonts/gilroy/stylesheet.css");
 
 html {
 	scroll-behavior: smooth;
@@ -115,6 +115,12 @@ li {
 
 .u-text-blue {
 	color: #4ccaf9;
+  text-decoration: underline;
+}
+
+.u-text-blue:hover {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -615,7 +621,7 @@ nav ul.slide {
 .courses {
   margin-top: 60px;
 	width: 100%;
-	height: calc(100vh - 65px);
+	height: calc(90vh - 65px);
 }
 
 .courses-inner {

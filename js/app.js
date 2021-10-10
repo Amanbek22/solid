@@ -174,7 +174,7 @@ const chooseCourse = (index) => {
 	<b>${coursesArr[index].name}</b>
 	<br />
 	${coursesArr[index].description}
-	<a href="${coursesArr[index].department}" class="u-text-blue">View More</a>
+	<a href="${coursesArr[index].department}" class="u-text-blue"><br>Узнать Больше</a>
 	`
 	const sidebarLinks = document.querySelectorAll(".sidebar a");
 	sidebarLinks.forEach((item) => item.classList.remove("active"))
@@ -200,7 +200,7 @@ const setCoursesMobile = () => {
 				<b>${item.name}</b>
 				<br>
 				${item.description}
-				<a href="${coursesArr[index].department}" class="u-text-blue">View More</a>
+				<a href="${coursesArr[index].department}" class="u-text-blue"><br>Узнать Больше</a>
 			</div>
 		</div>
 		<div class="courses-logo">
