@@ -9,7 +9,8 @@ sendMessage.addEventListener('click', async () => {
     chat_id: '589977540',
     text: `name: ${senderName.value}\nnumber: ${senderNumber.value}`
   }
-
+  document.getElementById("modalWrapper").style = "left: -120%;"
+  
   let response = await fetch('https://api.telegram.org/bot1844140635:AAH9AHryAhskskPJAzuPG3z21y4WsYVNr14/sendMessage', {
     method: 'POST',
     headers: {
@@ -17,6 +18,6 @@ sendMessage.addEventListener('click', async () => {
     },
     body: JSON.stringify(message)
   });
-  document.getElementById("modalWrapper").style = "left: -120%;"
+
   console.log(response);
 })
