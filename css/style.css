@@ -1,4 +1,7 @@
 @import url("../fonts/gilroy/stylesheet.css");
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -560,7 +563,9 @@ nav ul.slide {
 /* End of Header */
 
 /* Paralax BG */
-
+.about {
+	margin-bottom: 100px;
+}
 .about-parallax {
 	position: absolute;
 	z-index: -1;
@@ -639,6 +644,7 @@ nav ul.slide {
 
 /* End of paralax BG */
 
+
 /* Courses */
 .courses {
   	margin-top: 60px;
@@ -660,6 +666,15 @@ nav ul.slide {
 .courses-title {
 	margin-bottom: 30px;
 	font-size: 36px;
+	text-align: center;
+}
+
+.works > h3 {
+    font-size: 1.75rem;
+	margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .courses-content {
@@ -749,6 +764,279 @@ nav ul.slide {
   margin-left: 40px;
 }
 
+/* app */
+.app {
+	margin-top: 120px;
+	color: #ffffff;
+}
+.timeline-page {
+    padding: 10px 0;
+    position: relative;
+    margin-top: 35px;
+}
+.mt-5 {
+    margin-top: 3rem!important;
+}
+.timeline-item {
+    margin-bottom: 80px;
+}
+.timeline-page .timeline-item .date-label-left {
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+.timeline-page .timeline-item .works-description-right {
+    text-align: left;
+    margin-left: 15px;
+    float: left;
+    border-radius: 0;
+    padding: 20px 0;
+}
+.web-cta-desc {
+    max-width: 550px;
+    line-height: 1.65;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 1;
+}
+.text-muted {
+    color: #dbdee1!important;
+}
+.timeline-page .timeline-item .duration-right {
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+.timeline-page .timeline-item .date-label-left::after, .timeline-page .timeline-item .duration-right::after {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    z-index: 1;
+}
+.timeline-page .timeline-item .date-label-left::after {
+    right: -45px;
+}
+.timeline-page .timeline-item .duration-right::after {
+    left: -45px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-6, .col-md-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.timeline-page::after {
+    content: "";
+    height: 95%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    background-color: #e8e8e8;
+}
+@media (max-width: 768px) {
+	.timeline-page::after {
+		content: "";
+		display: none;
+	}
+	.timeline-page .timeline-item .date-label-left::after {
+		display: none;
+	}
+	.timeline-page .timeline-item .duration-right::after {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.col-md-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+.timeline-page .timeline-item .date-label-left::after, .timeline-page .timeline-item .duration-right::after, .back-to-top:hover {
+    background-color: #0accda;
+}
+/* app */
+
+/* features */
+.features {
+	margin-top: 60px;
+}
+.service-box {
+    padding: 15px;
+    text-align: center;
+}
+.service-box .services-icon, .price-features p i {
+    background-color: rgba(10, 204, 218, 0.1);
+}
+.service-box .services-icon, .price-features p i, .faq-icon, .social .social-icon:hover {
+    color: #0accda !important;
+}
+.service-box .services-icon {
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.service-box .services-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+	margin-bottom: 1rem;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.services-subtitle {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+}
+@media (min-width: 768px) {
+	.col-md-4 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+}
+/* features */
+/* about */
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+.rounded {
+    border-radius: .25rem!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.text-muted {
+    color: #868e96!important;
+}
+.section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    position: relative;
+}
+.bg-overlay {
+    background-color: rgba(36, 42, 53, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.cta-title {
+    font-size: 36px;
+    font-weight: 400;
+}
+.btn-outline-custom {
+	margin-top: 25px;
+    border: 1px solid #fff;
+	padding: 12px 28px;
+    font-size: 15px;
+    transition: all 0.5s;
+    letter-spacing: 0.6px;
+    color: #fff;
+    box-shadow: none !important;
+    outline: none !important;
+	cursor: pointer !important;
+}
+.btn-outline-custom:hover {
+	background: #42bdeb;
+	border-color: #42bdeb;
+}
+.btn-round {
+    border-radius: 30px;
+}
+/* about */
+/* footer */
+.footer {
+	padding: 35px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.contact > li {
+	margin: 16px 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.contact > li > i {
+	width: 20px;
+	color: #42bdeb;
+	text-align: center;
+}
+.social-medias {
+	display: flex;
+	grid-gap: 1em;
+	margin-top: 45px;
+}
+.social-medias a {
+	border: 3px solid #42bdeb;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+.social-medias a > i {
+	color: #42bdeb;
+	display: flex;
+	align-self: center;
+	size: 3px;
+	justify-content: center;
+}
+@media (max-width: 768px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		grid-gap: 2em;
+	}
+}
+/* footer */
 @media (max-width: 992px) {
 	.courses-inner {
 		padding: 20px 0;
@@ -790,6 +1078,9 @@ nav ul.slide {
 	}
 	.cousers--card {
 		opacity: 1;
+	}
+	.about .courses-title {
+		font-size: 24px;
 	}
 }
 /* End of courses */
