@@ -701,15 +701,25 @@ nav ul.slide {
 	background-repeat: no-repeat !important;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
-	grid-gap: 2em;
+	grid-gap: 1em;
+  padding: 30px;
 }
+
+.fab {
+  font-size: 50px;
+}
+
 .card--title {
 	text-align: center;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 500;
 	letter-spacing: 1px;
+}
+
+.card-sub-title {
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .card--description {
@@ -719,12 +729,12 @@ nav ul.slide {
 .card--description .description {
 	display: flex;
 	grid-gap: 5px;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 15px 10px;
 }
 
 .card--more {
-	 margin: 15px auto 0 auto;
+	 margin: 15px auto 45px auto;
 }
 .card--more > a {
 	font-size: 16px;
