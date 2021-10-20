@@ -234,11 +234,11 @@ const openModal = () => {
 	modal.style = "height: 100vh; opacity: 1; visibility: visible;";
 }
 
-let btnWriteUs = document.getElementById("write_us");
+let btnWriteUs = Array.from(document.getElementsByClassName("write_us"));
 
-btnWriteUs.addEventListener("click", () => {
+btnWriteUs.map((el) => el.addEventListener("click", () => {
 	openModal();
-})
+}))
 
 document.getElementById("modalWrapper").addEventListener("click", function(evt) {
 	var flyoutElement = document.getElementById('modal'),

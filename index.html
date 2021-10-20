@@ -39,7 +39,7 @@
           <p>В кратчайшие сроки от экспертов в IT образовании</p>
         </div>
         <div class="header-btn">
-          <a id="write_us" href="#" class="btn btn-blue animate-y">Бесплатная консультация</a>
+          <a id="write_us" href="#" class="btn btn-blue animate-y write_us">Бесплатная консультация</a>
         </div>
       </div>
       <div class="about-parallax-container">
@@ -64,10 +64,7 @@
       <div class="header-subtitle">Выбери себе подходящий курс и стань программистом в следующих <br>направлениях</div>
       <div class="cousers__cards--container">
         <div class="cousers--card">
-          <div 
-            style="background: linear-gradient(333.43deg,#00ecb3 16.67%,#9349f0);" 
-            class="card--preview"
-          >
+          <div style="background: linear-gradient(333.43deg,#00ecb3 16.67%,#9349f0);" class="card--preview">
             <i class="fab fa-react"></i>
             <div class="card--title">Frontend разработка <br> JavaScript/React.js</div>
             <div class="card--title card-sub-title">7000 сом/мес.</div>
@@ -95,14 +92,11 @@
             </div>
           </div>
           <div class="card--more">
-            <a href="#" class="btn btn-blue animate-y">Подробнее</a>
+            <a href="/react.html" class="btn btn-blue animate-y">Подробнее</a>
           </div>
         </div>
         <div class="cousers--card">
-          <div  
-            style="background: linear-gradient(153.43deg,#ffe814,#e51686 83.33%);" 
-            class="card--preview"
-          >
+          <div style="background: linear-gradient(153.43deg,#ffe814,#e51686 83.33%);" class="card--preview">
             <i class="fab fa-python"></i>
             <div class="card--title">Frontend разработка <br> JavaScript/React.js</div>
             <div class="card--title card-sub-title">7000 сом/мес.</div>
@@ -130,7 +124,7 @@
             </div>
           </div>
           <div class="card--more">
-              <a href="#" class="btn btn-blue animate-y">Подробнее</a>
+            <a href="/react.html" class="btn btn-blue animate-y">Подробнее</a>
           </div>
         </div>
         <div class="cousers--card">
@@ -162,7 +156,7 @@
             </div>
           </div>
           <div class="card--more">
-            <a href="#" class="btn btn-blue animate-y">Подробнее</a>
+            <a href="/react.html" class="btn btn-blue animate-y">Подробнее</a>
           </div>
         </div>
       </div>
@@ -276,7 +270,7 @@
       </div>
       <br><br>
       <div class="header-btn">
-        <a id="write_us" href="#" class="btn btn-blue animate-y">Запишите меня на ваши курсы!</a>
+        <a id="write_us" class="btn btn-blue animate-y write_us">Запишите меня на ваши курсы!</a>
       </div>
     </section>
     <br>
@@ -332,7 +326,7 @@
             <div class="text-center cta-Landsay mx-auto text-white">
               <p class="cta-title mt-4 mb-4 font-weight-normal">Знания - это актив, который невозможно потерять.</p>
               <div class="mt-4">
-                <a href="#" class="btn btn-outline-custom btn-round font-weight-bold" data-toggle="modal"
+                <a class="btn btn-outline-custom btn-round font-weight-bold write_us" data-toggle="modal"
                   data-target="#exampleModalLong">Получить знания</a>
               </div>
             </div>
@@ -347,19 +341,23 @@
         <ul class="contact">
           <li>
             <i class="fas fa-envelope"></i>
-            : solid.academy.kg@gmail.com</li>
+            : solid.academy.kg@gmail.com
+          </li>
           <li>
             <i class="fas fa-mobile"></i>
-            : <a href="tel:+996 501 55 79 03">+996 501 55 79 03</a></li>
+            : <a href="tel:+996 501 55 79 03">+996 501 55 79 03</a>
+          </li>
           <li>
             <i class="fas fa-mobile"></i>
-            : <a href="tel:+996 501 55 79 03">+996 707 62 96 17</a></li>
+            : <a href="tel:+996 501 55 79 03">+996 707 62 96 17</a>
+          </li>
           <li>
             <i class="fas fa-map-pin"></i>
-            : г. Бишкек, ул. Ахунбаева 119а, 5-этаж, 505 каб.</li>
+            : г. Бишкек, ул. Ахунбаева 119а, 5-этаж, 505 каб.
+          </li>
         </ul>
         <div class="social-medias">
-          <a href="https://www.instagram.com/solid.kg/" target="_blank"> 
+          <a href="https://www.instagram.com/solid.kg/" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="#">
@@ -368,23 +366,32 @@
         </div>
       </div>
       <div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a46dde9094e87a833ddc0331998bb8cbeca645c2482f5c1ef12df2d9659d104&amp;source=constructor" width="373" height="265" frameborder="0"></iframe>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a46dde9094e87a833ddc0331998bb8cbeca645c2482f5c1ef12df2d9659d104&amp;source=constructor"
+          width="373" height="265" frameborder="0"></iframe>
       </div>
     </footer>
   </div>
   <div id="modalWrapper" class="modal__wrapper">
     <div id="modal" class="modal">
-      <h1>Написать нам</h1>
+      <h1>Ответим на все вопросы</h1>
       <br>
       <br>
       <form action="" class="modal__contact__form">
-        <input type="text" id="sender-name" placeholder="Имя">
-        <input type="text" id="sender-number" placeholder="Номер">
+        <label>
+          <div>Имя</div>
+          <input type="text" id="sender-name" placeholder="Ваше имя">
+        </label>
+        <label>
+          <div>Телефон</div>
+          <input type="text" id="sender-number" placeholder="+996 700 00 00 00">
+        </label>
+        
         <br>
         <br>
-        <button class="btn-red-transparent modal--btn" id="send-message">
-          Напишите нам
-        </button>
+        <div class="header-btn">
+          <a id="send-message" class="btn btn-blue animate-y">Отправить</a>
+        </div>
       </form>
     </div>
   </div>

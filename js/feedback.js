@@ -3,13 +3,11 @@ const senderName = document.getElementById('sender-name');
 const senderNumber = document.getElementById('sender-number');
 
 sendMessage.addEventListener('click', async () => {
-  console.log('works');
-
+  
   const message = {
     chat_id: '589977540',
     text: `name: ${senderName.value}\nnumber: ${senderNumber.value}`
   }
-  document.getElementById("modalWrapper").style = "left: -120%;"
   
   let response = await fetch('https://api.telegram.org/bot1844140635:AAH9AHryAhskskPJAzuPG3z21y4WsYVNr14/sendMessage', {
     method: 'POST',
@@ -19,5 +17,11 @@ sendMessage.addEventListener('click', async () => {
     body: JSON.stringify(message)
   });
 
-  console.log(response);
+  // console.log(response);
+  // TODO: rewrite
+  document.getElementById("modal").innerHTML = "<img src='./images/success.gif'>"
+  setTimeout(() => {
+    document.getElementById("modalWrapper").style = "";
+    window.location.reload()
+  }, 4000)
 })
