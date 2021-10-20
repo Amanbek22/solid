@@ -231,7 +231,7 @@ window.addEventListener("load", () => {
 
 const modal = document.getElementById("modalWrapper")
 const openModal = () => {
-	modal.style = "left: 0";
+	modal.style = "height: 100vh; opacity: 1; visibility: visible;";
 }
 
 let btnWriteUs = document.getElementById("write_us");
@@ -254,5 +254,5 @@ document.getElementById("modalWrapper").addEventListener("click", function(evt) 
 	} while (targetElement);
 
 	// This is a click outside.
-	document.getElementById("modalWrapper").style = "left: -120%;"
+	document.getElementById("modalWrapper").style = ""
 });

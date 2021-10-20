@@ -1127,15 +1127,18 @@ nav ul.slide {
 /* End of courses */
 
 .modal__wrapper {
-	transition: all 0.5s ease-in;
+	transition: all 0.25s ease-in;
 	position: fixed;
 	top: 0;
-	left: -120%;
+	left: 0;
+	right: 0;
 	background: #00000060;
-	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
 	z-index: 99999;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .modal {
